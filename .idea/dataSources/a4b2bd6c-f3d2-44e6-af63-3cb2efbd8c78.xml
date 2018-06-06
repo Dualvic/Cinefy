@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="cinefy@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="cinefy">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="phpmyadmin"/>
+    <schema id="7" parent="1" name="test"/>
+    <table id="8" parent="2" name="cines"/>
+    <table id="9" parent="2" name="cines_peliculas"/>
+    <table id="10" parent="2" name="pases"/>
+    <table id="11" parent="2" name="peliculas"/>
+    <table id="12" parent="2" name="usuarios"/>
+    <table id="13" parent="2" name="valoracion"/>
+    <column id="14" parent="8" name="Cine_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="8" name="Direccion">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="8" name="Nombre">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="17" parent="8" name="UK_s5upw406xpafild7r0cr9u8no">
+      <ColNames>Nombre</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Cine_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="19" parent="8" name="UK_s5upw406xpafild7r0cr9u8no">
+      <ColNames>Nombre</ColNames>
+      <UnderlyingIndexName>UK_s5upw406xpafild7r0cr9u8no</UnderlyingIndexName>
+    </key>
+    <column id="20" parent="9" name="Cine_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="9" name="Pelicula_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="22" parent="9" name="FKibh0ue86mkmqmqj6rwpkbafxb">
+      <ColNames>Pelicula_ID</ColNames>
+    </index>
+    <key id="23" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Cine_ID
+Pelicula_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="9" name="FKpi10gc0x6iaeqs0dbkxwd73q2">
+      <ColNames>Cine_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>cines</RefTableName>
+      <RefColNames>Cine_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="25" parent="9" name="FKibh0ue86mkmqmqj6rwpkbafxb">
+      <ColNames>Pelicula_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>peliculas</RefTableName>
+      <RefColNames>Pelicula_ID</RefColNames>
+    </foreign-key>
+    <column id="26" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="27" parent="10" name="Horario">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="10" name="cine_Cine_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="10" name="pelicula_Pelicula_ID">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="10" name="usuario_ID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="31" parent="10" name="FKa0cwlmc0ltyle72mybwklubls">
+      <ColNames>usuario_ID</ColNames>
+    </index>
+    <index id="32" parent="10" name="FKch60yp6jqc1ywfot6v0rmhyc3">
+      <ColNames>cine_Cine_ID</ColNames>
+    </index>
+    <index id="33" parent="10" name="FKsyy53m2tykjbcwnxg51pteb9q">
+      <ColNames>pelicula_Pelicula_ID</ColNames>
+    </index>
+    <key id="34" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="35" parent="10" name="FKch60yp6jqc1ywfot6v0rmhyc3">
+      <ColNames>cine_Cine_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>cines</RefTableName>
+      <RefColNames>Cine_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="36" parent="10" name="FKsyy53m2tykjbcwnxg51pteb9q">
+      <ColNames>pelicula_Pelicula_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>peliculas</RefTableName>
+      <RefColNames>Pelicula_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="37" parent="10" name="FKa0cwlmc0ltyle72mybwklubls">
+      <ColNames>usuario_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>usuarios</RefTableName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="38" parent="11" name="Pelicula_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="11" name="Sinopsis">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="40" parent="11" name="Titulo">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="41" parent="11" name="UK_ik5lemot8nmsn005hfmi36yko">
+      <ColNames>Titulo</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Pelicula_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="43" parent="11" name="UK_ik5lemot8nmsn005hfmi36yko">
+      <ColNames>Titulo</ColNames>
+      <UnderlyingIndexName>UK_ik5lemot8nmsn005hfmi36yko</UnderlyingIndexName>
+    </key>
+    <column id="44" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="45" parent="12" name="Contraseña">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="12" name="Privilegios">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="47" parent="12" name="Usuario">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="48" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="13" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="13" name="Rating">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="13" name="pelicula_Pelicula_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="52" parent="13" name="FKmnqg4lutlctqhob95dxshto64">
+      <ColNames>pelicula_Pelicula_ID</ColNames>
+    </index>
+    <key id="53" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="54" parent="13" name="FKmnqg4lutlctqhob95dxshto64">
+      <ColNames>pelicula_Pelicula_ID</ColNames>
+      <RefSchemaName>cinefy</RefSchemaName>
+      <RefTableName>peliculas</RefTableName>
+      <RefColNames>Pelicula_ID</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+
+    <diskStore path="user.home/cache/cinefycache"/>
+
+    <defaultCache
+            maxEntriesLocalHeap="50000"
+            maxEntriesLocalDisk="100000"
+            eternal="false"
+            timeToIdleSeconds="360"
+            timeToLiveSeconds="360"
+            diskSpoolBufferSizeMB="10"
+            diskExpiryThreadIntervalSeconds="120"
+            transactionalMode="off"
+            memoryStoreEvictionPolicy="LRU">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <!-- Hibernate -->
+    <cache name="org.hibernate.cache.internal.StandardQueryCache"
+           maxEntriesLocalHeap="5"
+           eternal="false"
+           timeToLiveSeconds="120">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
+           maxEntriesLocalHeap="5000"
+           eternal="true">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <!-- Caches Aplicacion-->
+    <cache name="cache-general"
+           maxEntriesLocalHeap="20"
+           maxEntriesLocalDisk="1000"
+           eternal="false"
+           diskSpoolBufferSizeMB="2"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="600"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+</ehcache>

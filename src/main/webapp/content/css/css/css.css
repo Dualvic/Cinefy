@@ -1,0 +1,217 @@
+/*****************************************************/
+/* Home */
+
+#home {
+    background-color: #333333;
+}
+
+#login-home {
+    position: fixed;
+    top: 0;
+    padding: 20px;
+}
+
+#popcorn-home {
+    position: relative;
+    width: 70%;
+    top: 20px;
+    left: 25%;
+}
+
+#popcorn-home img {
+    height: 220px;
+}
+
+#form-home {
+    position: relative;
+    top: 65px;
+    left: 55px;
+    width: 250px;
+}
+
+#btn-login-home {
+    background-color: #dc3e3ec7;
+    width: 250px;
+}
+
+#title-home {
+    width: 200px;
+    position: relative;
+    left: 50%;
+    margin-top: 55px;
+
+    color: #dc3e3ec7;
+}
+
+#title-home h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    position: relative;
+    right: 20px;
+}
+
+#slogan {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#home-video {
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/******************************************************/
+/*            Logged                 */
+/*****************************************************/
+
+#header {
+    width: 100%;
+    height: 12%;
+    background-color: black;
+}
+
+#header-pop img{
+    height: 50px;
+    position: relative;
+    top: 38px;
+    left: 42%;
+}
+
+#contenido {
+    height: 100%;
+    padding-top: 50px;
+}
+
+#films {
+    background: url("/content/img/infinity-war.jpeg");
+}
+
+
+/******************************************************/
+/*            Profile                 */
+/*****************************************************/
+
+#profile {
+    background-color: #333333;
+}
+
+#profileHeader {
+    background-color: #dc3e3ec7;
+    width: 100%;
+    height: 70px;
+}
+
+#profileHeader p {
+    color: ghostwhite;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    display: block;
+    left: 135px;
+    top: 0px;
+    padding: 5px;
+    position: absolute;
+}
+
+#profileTitle{
+    color: ghostwhite;
+    height: 20px;
+    position: absolute;
+    top: 105px;
+    left: 155px;
+}
+
+#profileTitle p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+#profileAvatar {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 100px;
+    left: 112px;
+
+    border: solid #dc3e3ec7;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#profileAvatar img {
+    max-width:100%;
+    max-height:100%;
+}
+
+#userPwDrop {
+    width: 250px;
+    height: 40px;
+    background: #dc3e3ec7;
+    top: 155px;
+    left: 60px;
+    position: relative;
+}
+
+#userPwDrop p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+#changePw {
+    top: 175px;
+    left: 32px;
+    position: relative;
+    width: 300px;
+}
+
+#changePw input {
+    margin: 20px;
+}
+
+#changePwForm {
+    width: 270px;
+}
+
+#pw-new-button {
+    position: relative;
+    left: 90px;
+    width: 125px;
+    background: #dc3e3ec7;
+}
+
+#social-media {
+    width: 100%;
+    position: relative;
+    top: 350px;
+}
+
+.fa-facebook-square {
+    left: 50px;
+    position: relative;
+    font-size:60px;
+    color: #425ebf;
+}
+
+.fa-instagram {
+    font-size:60px;
+    left: 100px;
+    position: relative;
+    color: #c63d86;
+}
+
+.fa-twitter {
+    font-size:60px;
+    left: 150px;
+    position: relative;
+    color: deepskyblue;
+}
+
+.fa-home {
+    font-size: 40px;
+    left: 20px;
+    top: 13px;
+    position: relative;
+    color: white;
+}
