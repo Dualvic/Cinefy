@@ -16,10 +16,14 @@
 
 <script>
     $(document).ready(function () {
+
         $("#logout").on("click", function () {
-
             window.location = "${pageContext.request.contextPath}/pages/home.jsp"
+        });
 
+        $('#myCarousel').carousel({
+            pause: 'none',
+            interval: 1200
         });
     });
 
@@ -38,6 +42,16 @@
     </div>
 </div>
 <div class="row" id="pan">
+
+    <div id="background-carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active" style="background-image:url(${pageContext.request.contextPath}/content/img/infinity-war.jpeg)"></div>
+                <div class="item" style="background-image:url(${pageContext.request.contextPath}/content/img/12val.jpg)"></div>
+                <div class="item" style="background-image:url(${pageContext.request.contextPath}/content/img/readyone.jpg)"></div>
+            </div>
+        </div>
+    </div>
 
 </div>
     <div class="row">
