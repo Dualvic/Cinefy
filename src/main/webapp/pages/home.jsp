@@ -33,7 +33,7 @@
         <img src="${pageContext.request.contextPath}/content/img/popcorn.png" alt="popcorn">
     </div>
 
-    <form id="form-home" action="login" data-transition="pop">
+    <form id="form-home" action="login" method="post">
         <div class="form-group">
             <input type="user" class="form-control" id="user" name="usuario" placeholder="Usuario">
         </div>

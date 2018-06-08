@@ -17,7 +17,7 @@
 
 
         $(".fa-home").on("click", function () {
-            window.location.replace("./pages/home.jsp")
+            window.location = "${pageContext.request.contextPath}/pages/menu.jsp"
         })
     });
 
@@ -45,7 +45,7 @@
             <p>Cinefy</p>
         </div>
         <div id="profileTitle"><p>Perfil</p></div>
-        <div id="profileAvatar"><img src="content/img/popcorn.png"></div>
+        <div id="profileAvatar"><img src="./content/img/popcorn.png"></div>
         <button class="btn btn-warning" id="userPwDrop"><p>Cambiar Contraseña</p></button>
 
         <div id="changePw">

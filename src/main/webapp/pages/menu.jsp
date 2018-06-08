@@ -17,10 +17,26 @@
 <script>
     $(document).ready(function () {
 
+
+        // Redirecciones
         $("#logout").on("click", function () {
             window.location = "${pageContext.request.contextPath}/pages/home.jsp"
         });
 
+        $("#profileIcon").on("click", function () {
+            window.location = "${pageContext.request.contextPath}/pages/profile.jsp"
+        });
+
+        $("#salas").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/cines");
+        });
+
+        $("#films").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/peliculas");
+        });
+
+
+        // TODO Carousel
         $('#myCarousel').carousel({
             pause: 'none',
             interval: 1200
