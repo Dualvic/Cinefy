@@ -1,5 +1,7 @@
 package org.foobarspam.model;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.persistence.*;
 import java.util.Objects;
 import java.util.Set;
@@ -13,6 +15,7 @@ public class Pelicula {
     private int id;
     private String titulo;
     private String sinopsis;
+    private String portada;
     private Set<Cine> cines;
     private Set<Valoracion> valoraciones;
     private Set<Pase> pases;
@@ -46,6 +49,17 @@ public class Pelicula {
 
     public void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
+    }
+
+
+    @Basic
+    @Column(name = "Portada")
+    public String getPortada() {
+        return portada;
+    }
+
+    public void setPortada(String portada) {
+        this.portada = portada;
     }
 
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "peliculas")
