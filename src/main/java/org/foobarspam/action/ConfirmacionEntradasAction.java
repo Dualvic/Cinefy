@@ -104,12 +104,11 @@ public class ConfirmacionEntradasAction extends ActionSupport implements Session
 
         try {
 
-            // TODO:: Recuperar el usuario logeado. Completalo cuando tengas el login 100%
+            // TODO:: Recuperar el usuario logeado.
             int usuarioLogeadoID;
-            // MALO: De momento como no tenemos usuario logeado por defecto cogemos el 1.
             usuarioLogeadoID = (int) getSession().getOrDefault("usuario_id", 1);
 
-            /* BUENO - TODO: Descomentar cuando el login lo tengas
+            /* TODO: Descomentar cuando el login lo tengas
             if ( getSession().get("usuario_id") != null) {
                 BUENO: usuarioLogeadoID = (int) getSession().get("usuario_id");
             }

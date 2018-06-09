@@ -13,6 +13,21 @@
 
     })
 
+    function validate() {
+
+        let pw = document.getElementById("pw");
+        let rePw = document.getElementById("rePw");
+
+        if (pw.value !== "") {
+            if (pw.value === rePw.value) {
+                return true;
+            }
+        } else {
+            return false;
+        }
+
+    }
+
 </script>
 <body id="home">
 
@@ -33,18 +48,19 @@
         <img src="${pageContext.request.contextPath}/content/img/popcorn.png" alt="popcorn">
     </div>
 
-    <form id="form-home" action="login" data-transition="pop">
+    <form id="createU" action="createUser" method="post">
         <div class="form-group">
-            <input type="user" class="form-control" id="user" name="usuario" placeholder="Usuario">
+            <input type="text" class="form-control" id="user" name="usuario" placeholder="Nombre de usuario">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="pwd" name="password" placeholder="Contraseña">
+            <input type="password" class="form-control" id="pw" name="password" placeholder="Contraseña">
         </div>
-        <button type="submit" class="btn" id="btn-login-home">Iniciar sesion</button>
-    </form>
-    <div id="createUser">
-        <a href="${pageContext.request.contextPath}/pages/create_user.jsp">¿No tienes cuenta? ¡Registrate ahora!</a>
-    </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="repw" name="newPwConfirm"
+                   placeholder="Repita su contraseña">
+        </div>
+        <button type="submit" class="btn btn-warning" id="pw-new-user" onclick="validate()">Aceptar</button>
+    </form>>
 
 </div>
 </body>

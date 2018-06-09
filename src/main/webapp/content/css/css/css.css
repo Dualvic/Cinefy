@@ -30,7 +30,7 @@
 }
 
 #btn-login-home {
-    background-color: #dc3e3ec7;
+    background-color: #dc3545;
     width: 250px;
 }
 
@@ -40,7 +40,7 @@
     left: 50%;
     margin-top: 55px;
 
-    color: #dc3e3ec7;
+    color: #dc3545;
 }
 
 #title-home h1 {
@@ -60,6 +60,33 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+#createUser {
+    position: fixed;
+    bottom: 17%;
+    left: 18%;
+}
+
+#createUser a {
+    color: #dc3545;
+}
+
+/******************************************************/
+/*            Create User                 */
+/*****************************************************/
+
+#createU {
+    position: fixed;
+    top: 60%;
+    left: 23%;
+}
+
+#pw-new-user {
+    position: relative;
+    left: 35px;
+    width: 125px;
+    background: #dc3545;
 }
 
 
@@ -407,4 +434,47 @@ html,body {
 
 #back-cartelera i{
     font-size: 94px;
+}
+
+/******************************************************/
+/*            CONFIRMACION                 */
+/*****************************************************/
+
+#back-compra-entradas {
+    position: fixed;
+    bottom: 10%;
+}
+
+#back-compra-entradas i{
+    font-size: 65px;
+    position: relative;
+    left: 10px;
+}
+
+#info-compra {
+    position: fixed;
+    top: 50%;
+    color: ghostwhite;
+}
+
+#pop-confir {
+    position: fixed;
+    right: 10px;
+    top: 45%;
+    width: 45%;
+}
+
+#pop-confir img{
+ width: 100%;
+}
+
+#confir-bub {
+    position: fixed;
+    left: 14px;
+    top: 25%;
+    width: 61%;
+}
+
+#confir-bub img {
+    width: 100%;
 }

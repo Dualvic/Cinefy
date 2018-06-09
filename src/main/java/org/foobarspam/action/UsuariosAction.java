@@ -173,12 +173,36 @@ public class UsuariosAction extends ActionSupport implements SessionAware {
             usuariosDAO.closeCurrentSessionwithTransaction();
             return retorno;
         }
-
-
-
-
     }
 
+    public String createUser() {
+
+        String retorno = null;
+
+        try {
+            usuariosDAO.openCurrentSessionwithTransaction();
+
+            if(!usuariosDAO.existeByUsuario(usuario)) {
+                Usuario user = new Usuario();
+
+                user.setUsuario(usuario);
+                user.setContraseña(password);
+                user.setPrivilegios(0);
+
+                usuariosDAO.guardar(user);
+                retorno = SUCCESS;
+            } else {
+                retorno = ERROR;
+            }
+
+        }catch (Exception ex) {
+            LOGGER.debug("Error en crear Usuario: ", ex);
+            retorno = ERROR;
+        }finally {
+            usuariosDAO.closeCurrentSessionwithTransaction();
+            return retorno;
+        }
+    }
     /** GETTERS Y SETTERS **/
 
     public String getResult() {

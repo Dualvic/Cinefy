@@ -178,6 +178,28 @@ public class UsuariosDAO extends GenericDAO {
                 aux = lista.size();
             }
         } catch (Exception ex) {
+            LOGGER.error("Error en existe Password: ", ex);
+            throw ex;
+        }
+
+        if (aux > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean existeByUsuario(String usuario) throws Exception {
+        int aux = 0;
+        try {
+
+            Query query = getCurrentSession().createQuery("select id, usuario, contraseña, privilegios from Usuario where usuario=:usuario");
+            query.setParameter("usuario", usuario);
+
+            List<Integer> lista = query.list();
+            if (lista != null) {
+                aux = lista.size();
+            }
+        } catch (Exception ex) {
             LOGGER.error("Error en existe Usuario: ", ex);
             throw ex;
         }

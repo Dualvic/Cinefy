@@ -43,7 +43,7 @@
         });
 
         $("#back-cartelera").on("click", function () {
-            window.location = "${pageContext.request.contextPath}/pages/cines.jsp"
+            window.location = "${pageContext.request.contextPath}/pages/cine.action?cineID=1"
         });
 
         // Nº Entradas

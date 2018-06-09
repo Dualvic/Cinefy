@@ -53,6 +53,11 @@
             <result name="error">/pages/error/error.jsp</result>
         </action>
 
+        <action name="createUser" class="org.foobarspam.action.UsuariosAction" method="createUser">
+            <result name="success">/pages/home.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
+        </action>
+
         <action name="*" class="org.foobarspam.action.homeAction">
             <result name="success">/pages/home.jsp</result>
         </action>
