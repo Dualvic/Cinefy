@@ -42,11 +42,36 @@
             window.location = "${pageContext.request.contextPath}/pages/peliculas.jsp"
         });
 
-        $("#back-cines").on("click", function () {
-            window.location = "${pageContext.request.contextPath}/pages/menu.jsp"
-        })
+        $("#back-cartelera").on("click", function () {
+            window.location = "${pageContext.request.contextPath}/pages/cines.jsp"
+        });
 
+        // Nº Entradas
+        
+        $(".fa-plus-square").on("click", function () {
+            let entradasValue = $("#n-entradas").val();
+            if(parseInt(entradasValue) < 0) {
+                $("#n-entradas").val(0)
+            } else {
+                $("#n-entradas").val(parseInt(entradasValue) + 1)
+            }
+        });
 
+        // Comprobamos que el usuario no puede meter entradas negativas
+        $(".fa-minus-square").on("click", function () {
+            let entradasValue = $("#n-entradas").val();
+            if(parseInt(entradasValue) < 0) {
+                $("#n-entradas").val(0)
+
+            } else {
+                let result = parseInt(entradasValue) - 1;
+                if (result < 0) {
+                    $("#n-entradas").val(0)
+                } else {
+                    $("#n-entradas").val(parseInt(entradasValue) - 1)
+                }
+            }
+        });
     });
 
 </script>
@@ -72,12 +97,12 @@
             <input type="hidden" name="cineID" value=<%= request.getParameter("cineID") %> />
             <input type="hidden" name="peliculaID" value=<%= request.getParameter("peliculaID") %> />
             <br>
-            <select class="form-control">
-                <option name="horario">12:00</option>
-                <option name="horario">14:00</option>
-                <option name="horario">17:00</option>
-                <option name="horario">18:00</option>
-                <option name="horario">22:00</option>
+            <select class="form-control" name="horario">
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>22:00</option>
             </select>
             <br>
             <div id="n-entradas-sel">
@@ -89,11 +114,11 @@
                     <i class="fas fa-minus-square"></i>
                 </div>
             </div>
-            <input class="btn btn-danger" id="btn-compra-entradas" type="submit" value="Comprar" />
+            <button type="submit" id="submit-entradas" class="circleBase type1"><img src="${pageContext.request.contextPath}/content/img/popcornCoke.png"></button>
         </form>
     </div>
 
-    <div id="back-cines" class="circleBase type1">
+    <div id="back-cartelera" class="circleBase type1">
         <i class="fas fa-chevron-circle-left"></i>
     </div>
 </div>
