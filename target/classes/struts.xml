@@ -44,17 +44,17 @@
         </action>
 
         <action name="login" class="org.foobarspam.action.UsuariosAction" method="logginIn">
-            <result name="success">/pages/home-logged.jsp</result>
+            <result name="success">/pages/menu.jsp</result>
             <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="passwordChange" class="org.foobarspam.action.UsuariosAction" method="changePw">
-            <result name="success">/pages/home-logged.jsp</result>
+            <result name="success">/pages/menu.jsp</result>
             <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="*" class="org.foobarspam.action.homeAction">
-            <result name="success">/pages/profile.jsp</result>
+            <result name="success">/pages/home.jsp</result>
         </action>
 
         <action name="cines" class="org.foobarspam.action.CinesAction">

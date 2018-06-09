@@ -68,16 +68,15 @@
 /*****************************************************/
 
 #header {
-    width: 100%;
     height: 12%;
-    background-color: black;
+    background-color: #dc3545;
 }
 
 #header-pop img{
-    height: 50px;
+    height: 80px;
     position: relative;
-    top: 38px;
-    left: 42%;
+    top: 10px;
+    left: 40%;
 }
 
 #contenido {
@@ -87,6 +86,85 @@
 
 #films {
     background: url("/content/img/infinity-war.jpeg");
+}
+
+#films {
+    width: 80%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#films img {
+    width: 350px;
+}
+
+#salas {
+    width: 80%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#salas img {
+    width: 350px;
+}
+
+#pan {
+    height: 20px;
+    background-color: ghostwhite;
+}
+
+#logout {
+    font-size: 60px;
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+#profileIcon {
+    font-size: 60px;
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+/******************************************************/
+/*            MENU-CARROUSEL                 */
+/*****************************************************/
+
+html,body {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+#background-carousel{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.carousel,
+.carousel-inner {
+    width:100%;
+    height:100%;
+    z-index:0;
+    overflow:hidden;
+}
+.item {
+    width:100%;
+    height:100%;
+    background-position:center center;
+    background-size:cover;
+    z-index:0;
+}
+
+#content-wrapper {
+    position:absolute;
+    z-index:1 !important;
+    min-width:100%;
+    min-height:100%;
+}
+.well {
+    opacity:0.85
 }
 
 
@@ -99,7 +177,7 @@
 }
 
 #profileHeader {
-    background-color: #dc3e3ec7;
+    background-color: #dc3545;
     width: 100%;
     height: 70px;
 }
@@ -135,7 +213,7 @@
     top: 100px;
     left: 112px;
 
-    border: solid #dc3e3ec7;
+    border: solid #dc3545;
     border-radius: 20px;
     padding: 20px;
 }
@@ -148,7 +226,7 @@
 #userPwDrop {
     width: 250px;
     height: 40px;
-    background: #dc3e3ec7;
+    background: #dc3545;
     top: 155px;
     left: 60px;
     position: relative;
@@ -178,7 +256,7 @@
     position: relative;
     left: 90px;
     width: 125px;
-    background: #dc3e3ec7;
+    background: #dc3545;
 }
 
 #social-media {
@@ -214,4 +292,102 @@
     top: 13px;
     position: relative;
     color: white;
+}
+
+/******************************************************/
+/*            CINES                 */
+/*****************************************************/
+
+#cines-cines {
+
+}
+
+#title-cines {
+    width: 200px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #333333;
+}
+
+#title-cines h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    position: relative;
+    right: 20px;
+}
+
+.cine-card {
+    margin-top: 10px;
+}
+
+#back-cines {
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+#back-cines i{
+    font-size: 94px;
+}
+
+
+.circleBase {
+    border-radius: 50%;
+}
+
+.type1 {
+    width: 100px;
+    height: 100px;
+    background: #dc3545;
+    border: 3px solid #dc3545;
+}
+
+/******************************************************/
+/*            ENTRADAS                 */
+/*****************************************************/
+
+#cines-venta {
+    position: relative;
+    top: 50px;
+}
+
+#n-entradas {
+    width: 110px;
+    height: 100px;
+    margin: 50px 125px 125px;
+    border-radius: 20px;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#btn-compra-entradas {
+    margin-bottom: 100px;
+    margin-left: 135px;
+}
+
+#more-n {
+    width: 100%;
+    position: relative;
+    top: 140px;
+    left: 25px;
+    color: #dc3545;
+}
+
+#more-n i {
+    width: 100%;
+    font-size: 80px;
+}
+
+#less-n {
+    width: 100%;
+    position: relative;
+    color: #dc3545;
+    bottom: 215px;
+    left: 265px;
+}
+
+#less-n i {
+    width: 100%;
+    font-size: 80px;
 }

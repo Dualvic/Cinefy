@@ -341,3 +341,53 @@ html,body {
     background: #dc3545;
     border: 3px solid #dc3545;
 }
+
+/******************************************************/
+/*            ENTRADAS                 */
+/*****************************************************/
+
+#cines-venta {
+    position: relative;
+    top: 50px;
+}
+
+#n-entradas {
+    width: 110px;
+    height: 100px;
+    margin: 50px 125px 125px;
+    border-radius: 20px;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#btn-compra-entradas {
+    margin-bottom: 100px;
+    margin-left: 135px;
+}
+
+#more-n {
+    width: 100%;
+    position: relative;
+    top: 140px;
+    left: 25px;
+    color: #dc3545;
+}
+
+#more-n i {
+    width: 100%;
+    font-size: 80px;
+}
+
+#less-n {
+    width: 100%;
+    position: relative;
+    color: #dc3545;
+    bottom: 215px;
+    left: 265px;
+}
+
+#less-n i {
+    width: 100%;
+    font-size: 80px;
+}
