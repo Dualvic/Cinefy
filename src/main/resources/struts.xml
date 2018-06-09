@@ -64,30 +64,37 @@
 
         <action name="cines" class="org.foobarspam.action.CinesAction">
             <result name="success">/pages/cines.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="peliculas" class="org.foobarspam.action.PeliculasAction">
             <result name="success">/pages/peliculas.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="cine" class="org.foobarspam.action.CineDetalleAction">
             <result name="success">/pages/cine.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="pelicula" class="org.foobarspam.action.PeliculaDetalleAction">
             <result name="success">/pages/pelicula.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="venta_entradas" class="org.foobarspam.action.VentaEntradasAction">
             <result name="success">/pages/venta_entradas.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="confirmacion_entradas" class="org.foobarspam.action.ConfirmacionEntradasAction">
             <result name="success">/pages/confirmacion_entradas.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <action name="perfil" class="org.foobarspam.action.PerfilAction">
             <result name="success">/pages/perfil.jsp</result>
+            <result name="error">/pages/error/error.jsp</result>
         </action>
 
         <!--<action name="login" class="org.foobarspam.action.IndexAction" method="gestorURL">-->
