@@ -13,6 +13,7 @@ public class Cine {
     private int id;
     private String nombre;
     private String direccion;
+    private String foto;
     private Set<Pelicula> peliculas;
     private Set<Pase> pases;
 
@@ -45,6 +46,16 @@ public class Cine {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    @Basic
+    @Column(name = "Foto", nullable = false)
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

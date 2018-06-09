@@ -46,15 +46,15 @@
 </script>
 <body style="background-color: #333333">
 <div class="container">
-<div class="row">
-    <div class="header" id="header">
-
-                <div id="logout">
-                    <i class="fas fa-sign-out-alt"></i>
-                </div>
-                <div id="profileIcon">
-                    <i class="fas fa-user-circle"></i>
-                </div>
+<div class="row header" id="header">
+    <div id="profileIcon" class="col">
+        <i class="fas fa-user-circle"></i>
+    </div>
+    <div id="title-cines" class="col">
+        <h1>Cinefy</h1>
+    </div>
+    <div id="logout" class="col">
+        <i class="fas fa-sign-out-alt"></i>
     </div>
 </div>
 <div class="row" id="pan">
