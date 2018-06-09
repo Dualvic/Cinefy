@@ -58,17 +58,7 @@
     </div>
 </div>
 <div class="row" id="pan">
-
-    <div id="background-carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="item active" style="background-image:url(${pageContext.request.contextPath}/content/img/infinity-war.jpeg)"></div>
-                <div class="item" style="background-image:url(${pageContext.request.contextPath}/content/img/12val.jpg)"></div>
-                <div class="item" style="background-image:url(${pageContext.request.contextPath}/content/img/readyone.jpg)"></div>
-            </div>
-        </div>
-    </div>
-
+    
 </div>
     <div class="row">
         <div id="films">
@@ -78,20 +68,7 @@
         <div id="salas">
             <img src="${pageContext.request.contextPath}/content/img/verSalas.png" alt="salas">
         </div>
-
-
-
-
     </div>
-    <%--<form action = "cines">--%>
-        <%--<input class="btn btn-success" type="submit" value="Cines" />--%>
-    <%--</form>--%>
-    <%--<form cl action = "peliculas">--%>
-        <%--<input class="btn btn-success" type="submit" value="Peliculas" />--%>
-    <%--</form>--%>
-    <%--<form action = "perfil">--%>
-        <%--<input class="btn btn-success" type="submit" value="Perfil" />--%>
-    <%--</form>--%>
 </div>
 
 </body>

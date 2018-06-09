@@ -68,8 +68,8 @@
 /*****************************************************/
 
 #header {
-    height: 10%;
-    background-color: #dc3e3ec7;
+    height: 12%;
+    background-color: #dc3545;
 }
 
 #header-pop img{
@@ -116,14 +116,14 @@
 #logout {
     font-size: 60px;
     float: right;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-right: 10px;
 }
 
 #profileIcon {
     font-size: 60px;
     float: left;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 10px;
 }
 
@@ -177,7 +177,7 @@ html,body {
 }
 
 #profileHeader {
-    background-color: #dc3e3ec7;
+    background-color: #dc3545;
     width: 100%;
     height: 70px;
 }
@@ -213,7 +213,7 @@ html,body {
     top: 100px;
     left: 112px;
 
-    border: solid #dc3e3ec7;
+    border: solid #dc3545;
     border-radius: 20px;
     padding: 20px;
 }
@@ -226,7 +226,7 @@ html,body {
 #userPwDrop {
     width: 250px;
     height: 40px;
-    background: #dc3e3ec7;
+    background: #dc3545;
     top: 155px;
     left: 60px;
     position: relative;
@@ -256,7 +256,7 @@ html,body {
     position: relative;
     left: 90px;
     width: 125px;
-    background: #dc3e3ec7;
+    background: #dc3545;
 }
 
 #social-media {
@@ -305,6 +305,7 @@ html,body {
 #title-cines {
     width: 200px;
     position: relative;
+    margin-top: 10px;
     margin-left: 15px;
     color: #333333;
 }
@@ -318,4 +319,25 @@ html,body {
 
 .cine-card {
     margin-top: 10px;
+}
+
+#back-cines {
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+#back-cines i{
+    font-size: 94px;
+}
+
+
+.circleBase {
+    border-radius: 50%;
+}
+
+.type1 {
+    width: 100px;
+    height: 100px;
+    background: #dc3545;
+    border: 3px solid #dc3545;
 }
