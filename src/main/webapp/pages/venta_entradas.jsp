@@ -76,6 +76,21 @@
                 }
             }
         });
+
+        $(".fa-plus-square").on("click", function () {
+            let precio = $("#n-entradas").val();
+            $("#precio").text((parseInt(precio) * 8) + " €")
+        });
+
+        $(".fa-minus-square").on("click", function () {
+            let nEntradas = $("#n-entradas").val();
+            let precio = $("#precio").text();
+            if(parseInt(nEntradas) <= 0) {
+                $("#precio").text(0)
+            } else {
+                $("#precio").text((parseInt(precio) - 8) + " €");
+            }
+        });
     });
 
 </script>
@@ -93,7 +108,7 @@
         </div>
     </div>
     <div class="row" id="pan">
-        Venta de entradas
+
     </div>
 
     <div id="cines-venta">
@@ -121,6 +136,12 @@
             </div>
             <button type="submit" formmethod="post" id="submit-entradas" class="circleBase type1"><img src="${pageContext.request.contextPath}/content/img/popcornCoke.png"></button>
         </form>
+        <div id="precio">
+
+        </div>
+        <div id="precioIMG">
+            <img src="${pageContext.request.contextPath}/content/img/bocadilloEmpty.png">
+        </div>
     </div>
 
     <div id="back-cartelera" class="circleBase type1">

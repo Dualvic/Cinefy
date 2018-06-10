@@ -61,7 +61,7 @@
     </div>
   </div>
   <div class="row" id="pan">
-    Venta de entradas
+
   </div>
 
   <div id="confir-bub">
