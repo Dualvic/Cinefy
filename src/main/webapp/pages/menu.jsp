@@ -17,7 +17,6 @@
 <script>
     $(document).ready(function () {
 
-
         // Redirecciones
         $("#logout").on("click", function () {
             window.location = "${pageContext.request.contextPath}/pages/home.jsp"
@@ -39,6 +38,12 @@
             window.location.replace("${pageContext.request.contextPath}/peliculas");
         });
 
+        // Spoily hidden
+
+        $("#spoily-btn").on("click", function () {
+            $("#spoily").hide();
+        });
+
         // TODO Carousel
         $('#myCarousel').carousel({
             pause: 'none',
@@ -48,6 +53,18 @@
 
 </script>
 <body style="background-color: #333333">
+
+<div id="spoily">
+
+    <div id="spoily-conver">
+        <h2>¡Hola, me llamo Spoily y sere tu ayudante en tu compra de entradas!</h2>
+    </div>
+
+    <div id="popcorn-spoily">
+        <img src="${pageContext.request.contextPath}/content/img/popcorn.png" alt="popcorn">
+    </div>
+    <button id="spoily-btn" class="btn btn-danger"> Continuar</button>
+</div>
 <div class="container">
 <div class="row header" id="header">
     <div id="profileIcon" class="col">
