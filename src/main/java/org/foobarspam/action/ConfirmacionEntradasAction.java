@@ -104,16 +104,8 @@ public class ConfirmacionEntradasAction extends ActionSupport implements Session
 
         try {
 
-            // TODO:: Recuperar el usuario logeado.
             int usuarioLogeadoID;
             usuarioLogeadoID = (int) getSession().getOrDefault("usuario_id", 1);
-
-            /* TODO: Descomentar cuando el login lo tengas
-            if ( getSession().get("usuario_id") != null) {
-                BUENO: usuarioLogeadoID = (int) getSession().get("usuario_id");
-            }
-            */
-
 
 
             peliculasDAO.openCurrentSession();
