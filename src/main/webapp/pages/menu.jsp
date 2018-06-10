@@ -63,10 +63,10 @@
 <div class="row" id="pan">
 
 </div>
-    <video autoplay muted loop id="home-video">
-        <source src="${pageContext.request.contextPath}/content/media/home.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
+    <%--<video autoplay muted loop id="home-video">--%>
+        <%--<source src="${pageContext.request.contextPath}/content/media/home.mp4" type="video/mp4">--%>
+        <%--Your browser does not support HTML5 video.--%>
+    <%--</video>--%>
     <div class="row">
         <div id="films">
             <img src="${pageContext.request.contextPath}/content/img/verPeliculas.png" alt="films">
