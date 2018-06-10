@@ -41,7 +41,7 @@
         // Spoily hidden
 
         $("#spoily-btn").on("click", function () {
-            $("#spoily").hide();
+            $("#spoily").fadeOut();
         });
 
         // TODO Carousel
