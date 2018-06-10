@@ -1,4 +1,4 @@
-# Cinefy
+# Shared Doors
 
 **Motivación.**
 Mi principal motivacion era poder ofrecer una herramienta con la que poder comprar entradas de cine de una manera comoda y sencilla, de forma amigable e intuitiva. 
@@ -84,7 +84,7 @@ Frente a la estimación inicial del anteproyecto, la he sobrepasado por 19 horas
 
 **Presupuesto de la app para el comprador con el coste del software amortizado utilizado en cada fase del ciclo de vida de la app.**
 
-
+![image alt text](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)
 
 
 
