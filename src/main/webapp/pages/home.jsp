@@ -16,11 +16,6 @@
 </script>
 <body id="home">
 
-<video autoplay muted loop id="home-video">
-    <source src="${pageContext.request.contextPath}/content/media/avengers.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-
 <div id="login-home">
 
     <div id="title-home">

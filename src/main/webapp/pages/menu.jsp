@@ -27,6 +27,10 @@
             window.location = "${pageContext.request.contextPath}/pages/profile.jsp"
         });
 
+        $("#title-cines").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/pages/menu.jsp");
+        });
+
         $("#salas").on("click", function () {
             window.location.replace("${pageContext.request.contextPath}/cines");
         });
@@ -34,11 +38,6 @@
         $("#films").on("click", function () {
             window.location.replace("${pageContext.request.contextPath}/peliculas");
         });
-
-        $("#title-cines").on("click", function () {
-            window.location.replace("${pageContext.request.contextPath}/pages/menu.jsp");
-        });
-
 
         // TODO Carousel
         $('#myCarousel').carousel({
@@ -62,8 +61,12 @@
     </div>
 </div>
 <div class="row" id="pan">
-    Menu
+
 </div>
+    <video autoplay muted loop id="home-video">
+        <source src="${pageContext.request.contextPath}/content/media/home.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
     <div class="row">
         <div id="films">
             <img src="${pageContext.request.contextPath}/content/img/verPeliculas.png" alt="films">
