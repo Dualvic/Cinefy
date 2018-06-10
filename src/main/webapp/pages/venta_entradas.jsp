@@ -46,6 +46,10 @@
             window.location = "${pageContext.request.contextPath}/pages/cine.action?cineID=1"
         });
 
+        $("#title-cines").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/pages/menu.jsp");
+        });
+
         // Nº Entradas
         
         $(".fa-plus-square").on("click", function () {
@@ -106,15 +110,16 @@
             </select>
             <br>
             <div id="n-entradas-sel">
-                <div id="more-n">
-                    <i class="fas fa-plus-square"></i>
-                </div>
-            <input id="n-entradas" type="number" name="numeroEntradas" value="1" required />
                 <div id="less-n">
                     <i class="fas fa-minus-square"></i>
                 </div>
+            <input id="n-entradas" type="number" name="numeroEntradas" value="1" required />
+                <div id="more-n">
+                    <i class="fas fa-plus-square"></i>
+                </div>
+
             </div>
-            <button type="submit" id="submit-entradas" class="circleBase type1"><img src="${pageContext.request.contextPath}/content/img/popcornCoke.png"></button>
+            <button type="submit" formmethod="post" id="submit-entradas" class="circleBase type1"><img src="${pageContext.request.contextPath}/content/img/popcornCoke.png"></button>
         </form>
     </div>
 

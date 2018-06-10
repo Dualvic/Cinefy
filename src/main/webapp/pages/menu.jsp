@@ -35,6 +35,10 @@
             window.location.replace("${pageContext.request.contextPath}/peliculas");
         });
 
+        $("#title-cines").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/pages/menu.jsp");
+        });
+
 
         // TODO Carousel
         $('#myCarousel').carousel({

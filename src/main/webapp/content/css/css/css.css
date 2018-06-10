@@ -381,11 +381,16 @@ html,body {
 #n-entradas {
     width: 110px;
     height: 100px;
-    margin: 35px 120px 125px;
     border-radius: 20px;
     font-size: 90px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+#n-entradas-sel {
+    position: fixed;
+    top: 48%;
+    left: 36%;
 }
 
 #btn-compra-entradas {
@@ -393,10 +398,9 @@ html,body {
 }
 
 #more-n {
-    width: 0;
-    position: relative;
-    top: 125px;
-    left: 15px;
+    position: fixed;
+    bottom: 41%;
+    left: 74%;
     color: #dc3545;
 }
 
@@ -406,11 +410,10 @@ html,body {
 }
 
 #less-n {
-    width: 0;
-    position: relative;
+    position: fixed;
     color: #dc3545;
-    bottom: 215px;
-    left: 265px;
+    bottom: 41%;
+    left: 8%;
 }
 
 #less-n i {

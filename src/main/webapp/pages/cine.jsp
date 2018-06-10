@@ -40,7 +40,11 @@
 
         $("#back-cines").on("click", function () {
             window.location = "${pageContext.request.contextPath}/pages/menu.jsp"
-        })
+        });
+
+        $("#title-cines").on("click", function () {
+            window.location.replace("${pageContext.request.contextPath}/pages/menu.jsp");
+        });
 
 
     });

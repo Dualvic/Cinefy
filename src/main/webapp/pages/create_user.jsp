@@ -11,7 +11,11 @@
 
     $(document).ready(function () {
 
-    })
+        $("#title-home").on("click", function () {
+            window.location = "${pageContext.request.contextPath}/pages/home.jsp"
+        })
+
+    });
 
     function validate() {
 
