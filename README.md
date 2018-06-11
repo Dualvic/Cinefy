@@ -1,4 +1,4 @@
-# Shared Doors
+# CINEFY
 
 **Motivación.**
 Mi principal motivacion era poder ofrecer una herramienta con la que poder comprar entradas de cine de una manera comoda y sencilla, de forma amigable e intuitiva. 
