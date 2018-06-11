@@ -137,7 +137,7 @@
             <button type="submit" formmethod="post" id="submit-entradas" class="circleBase type1"><img src="${pageContext.request.contextPath}/content/img/popcornCoke.png"></button>
         </form>
         <div id="precio">
-
+8 €
         </div>
         <div id="precioIMG">
             <img src="${pageContext.request.contextPath}/content/img/bocadilloEmpty.png">

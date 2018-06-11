@@ -71,20 +71,24 @@
     <img src="${pageContext.request.contextPath}/content/img/popcorn3D.png">
   </div>
   <div id="info-compra">
-    <s:iterator value="pasesComprados" status="pasesCompradosStatus" var="pases">
+    <s:iterator value="paseFinal" status="paseFinal" var="pase">
 
           <ul>
             <li>
-            <s:property value="#pases.horario"/>
+            Horario: <s:property value="#pase.horario"/>
             </li>
             <li>
-            <s:property value="#pases.cine.nombre"/>
+            <s:property value="#pase.cine.nombre"/>
             </li>
             <li>
-            <s:property value="#pases.pelicula.titulo"/>
+            <s:property value="#pase.pelicula.titulo"/>
             </li>
             <li>
-            <s:property value="#pases.usuario.usuario"/>
+            Usuario: <s:property value="#pase.usuario.usuario"/>
+            </li>
+            <li>
+              Nº de Entradas: <s:property value="getNumeroEntradas()"/>
+            </li>
           </ul>
 
     </s:iterator>

@@ -12,10 +12,8 @@ import org.foobarspam.model.Pelicula;
 import org.foobarspam.model.Usuario;
 import org.foobarspam.utils.CinefyConstants;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class ConfirmacionEntradasAction extends ActionSupport implements SessionAware {
 
@@ -34,6 +32,8 @@ public class ConfirmacionEntradasAction extends ActionSupport implements Session
     private Integer precio;
 
     private Set<Pase> pasesComprados = new HashSet<Pase>();
+    private ArrayList<Pase> paseComprado = new ArrayList<>();
+    private ArrayList<Pase> paseFinal = new ArrayList<Pase>();
 
     public ConfirmacionEntradasAction() {
         usuariosDAO = new UsuariosDAO();
@@ -98,6 +98,14 @@ public class ConfirmacionEntradasAction extends ActionSupport implements Session
         this.pasesComprados = pasesComprados;
     }
 
+    public ArrayList<Pase> getPaseFinal() {
+        return paseFinal;
+    }
+
+    public void setPaseFinal(ArrayList<Pase> paseFinal) {
+        this.paseFinal = paseFinal;
+    }
+
     public String execute() throws Exception {
 
 
@@ -124,6 +132,20 @@ public class ConfirmacionEntradasAction extends ActionSupport implements Session
 
             pasesDAO.openCurrentSessionwithTransaction();
             pasesComprados = pasesDAO.comprarPases(horario, numeroEntradas, cine, pelicula, usuario);
+
+            for (Pase pase : pasesComprados) {
+                Pase paseNew = new Pase();
+
+                paseNew.setId(pase.getId());
+                paseNew.setCine(pase.getCine());
+                paseNew.setHorario(pase.getHorario());
+                paseNew.setPelicula(pase.getPelicula());
+                paseNew.setUsuario(pase.getUsuario());
+
+                paseComprado.add(paseNew);
+            }
+
+            paseFinal.add(paseComprado.get(0));
 
             precio = numeroEntradas * CinefyConstants.PRECIO_POR_ENTRADA;
         }
