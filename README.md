@@ -74,6 +74,9 @@ Debido a esto ultimo el diagrama de Gantt queda asi:
 
 [![image alt text](https://github.com/Dualvic/CINEFY/blob/master/gantt.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/gantt.PNG?raw=true)
 
+[![image alt text](https://github.com/Dualvic/CINEFY/blob/master/gantt2.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/gantt2.PNG?raw=true)
+
+
 Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 14,34€
 
 Dando un precio final de 1946€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
