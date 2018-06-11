@@ -87,16 +87,16 @@ Un ejemplo seria que la ultima version de Struts no funciona con Java9, ya que e
 
 Ejemplos como este no pararon de ocurrir durante las dos primeras semanas de desarrollo donde la estructura del proyecto no terminaba de ser solida.
 
-Frente a la estimación inicial del anteproyecto, la he sobrepasado por 19 horas.
+Frente a la estimación inicial del anteproyecto, la he sobrepasado por 33 horas.
 
 **Presupuesto de la app para el comprador con el coste del software amortizado utilizado en cada fase del ciclo de vida de la app.**
 
 ![image alt text](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)
 
 
-Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 14,34€
+Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 5,34€
 
-Dando un precio final de 1946€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
+Dando un precio final de 865€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
 
 
 **Conclusiones.**
