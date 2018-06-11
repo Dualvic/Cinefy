@@ -5,6 +5,8 @@
 Mi principal motivacion era poder ofrecer una herramienta con la que poder comprar entradas de cine de una manera comoda y sencilla, de forma amigable e intuitiva. 
 Con esto tambien se quiere ayudar a los cines a recibir opiniones y valoraciones sobre los servicios que ofrecen, asi como captar sponsors y aumentar sus beneficios a largo plazo.
 
+Esta idea surgió en una cena con amigos donde se nos ocurrio ir al cine, pero al llegar a dicha sala, las entradas ya estaban terminadas para esa sesion.
+
 **Objetivos.**
 
 Los objetivos están definidos como historias de usuario.
@@ -77,10 +79,6 @@ Debido a esto ultimo el diagrama de Gantt queda asi:
 [![image alt text](https://github.com/Dualvic/CINEFY/blob/master/gantt2.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/gantt2.PNG?raw=true)
 
 
-Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 14,34€
-
-Dando un precio final de 1946€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
-
 **Análisis y justificación de las diferencias en las estimaciones.**
 
 La estimación la realice mediante tokens de media hora, por falta de investigación en las versiones de las tecnologías que iba a utilizar en el análisis del anteproyecto, los apartados de "Analisis del proyecto" e "Implementación" se vieron muy afectadas casi duplicando la estimación inicial.
@@ -96,6 +94,9 @@ Frente a la estimación inicial del anteproyecto, la he sobrepasado por 19 horas
 ![image alt text](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/material%20utilizado.PNG?raw=true)
 
 
+Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 14,34€
+
+Dando un precio final de 1946€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
 
 
 **Conclusiones.**
