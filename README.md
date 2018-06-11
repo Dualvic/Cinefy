@@ -19,6 +19,8 @@ Quién? Un usuario de la aplicación. Qué? Quiere poder gestionar su cuenta. Pa
 
 Quién? Un usuario. Qué? Quiere poder consultar sus pases/tickets comprados. Para qué? Para poder tenerlo todo mas organizado y consultar sus compras
 
+Quien? Una Promotora. Que? Quiere poder añadir cines a su cartelera. Para que? Para ofrecer estrenos a los usuarios.
+
 **Demostración del funcionamiento de la aplicación, en base a los objetivos definidos en el anteproyecto.**
 
 
@@ -87,7 +89,7 @@ Un ejemplo seria que la ultima version de Struts no funciona con Java9, ya que e
 
 Ejemplos como este no pararon de ocurrir durante las dos primeras semanas de desarrollo donde la estructura del proyecto no terminaba de ser solida.
 
-Frente a la estimación inicial del anteproyecto, la he sobrepasado por 33 horas.
+Frente a la estimación inicial del anteproyecto, la he sobrepasado por 10 horas.
 
 **Presupuesto de la app para el comprador con el coste del software amortizado utilizado en cada fase del ciclo de vida de la app.**
 
@@ -96,7 +98,9 @@ Frente a la estimación inicial del anteproyecto, la he sobrepasado por 33 horas
 
 Para el precio he tomado de referencia mi trabajo actual de becario en KUMOINTERNET y calculé que la hora de desarollo salia a 5,34€
 
-Dando un precio final de 865€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
+Dando un precio final de 784€, este precio seria por hora y no estando titulado como desarrollador y costandome mas el desarrollo que un Senior consolodidado, el precio bajaria mucho, ya que no me pareceria un precio justo por este desarrollo.
+
+Este precio, sumado a la licencia "Freelancer de IDEA", que serian 60€ ya que la Licencia esta valorada en 200€/año, dejaria un precio total final de: 844€
 
 
 **Conclusiones.**
