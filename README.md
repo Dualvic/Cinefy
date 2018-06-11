@@ -1,6 +1,7 @@
 # CINEFY
 
 **Motivación.**
+
 Mi principal motivacion era poder ofrecer una herramienta con la que poder comprar entradas de cine de una manera comoda y sencilla, de forma amigable e intuitiva. 
 Con esto tambien se quiere ayudar a los cines a recibir opiniones y valoraciones sobre los servicios que ofrecen, asi como captar sponsors y aumentar sus beneficios a largo plazo.
 
