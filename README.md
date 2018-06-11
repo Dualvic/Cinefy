@@ -103,7 +103,7 @@ Dando un precio final de 865€, este precio seria por hora y no estando titulad
 
 Creo que mi mayor fallo fue en la planificacion del proyecto,  a medida que pasaban las semanas se me ocurrian nuevas funcionalidades y el potencial del proyecto. Pero por culpa de los contratiempos en la realizacion de la estructura del proyecto, vi muy limitadas las horas a dedicarle a nuevas funcionalidades.
 
-He conseguido completar las 3 historias mas grandes de la aplicación, con 130 horas aun asi, me parecen escasas.
+He conseguido completar dos historias quedandome la del usuario de la promotora.
 
 Tambien añadir que realicé un panel kanban al ver la cantidad de tareas que tenia que realizar:
 ![image alt text](https://github.com/Dualvic/CINEFY/blob/master/kanban.jpeg?raw=true)](https://github.com/Dualvic/CINEFY/blob/master/kanban.jpeg?raw=true)
